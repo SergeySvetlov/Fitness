@@ -1,0 +1,11 @@
+.header {
+  background-color: $color-venetia-red;
+  background-image: url("../img/backgrounds/header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/backgrounds/header@2x.jpg");
+  }
+}

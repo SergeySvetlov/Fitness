@@ -1,0 +1,63 @@
+.header-main {
+  display: flex;
+  margin: -54px 0 0 0;
+  padding: 0 200px 51px 19px;
+}
+
+.header-main__description {
+  display: grid;
+  grid-template-columns: 1fr 298px;
+  grid-template-rows: 1fr auto auto;
+  grid-template-areas: "city city" "subtitle title" "button button";
+  padding: 0 60px 0 0;
+
+  p {
+    grid-area: city;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 57.6px;
+    font-family: $ff-alumni-sans;
+    color: $color-default-white;
+    padding: 0 53px 0 0;
+    letter-spacing: 0.03em;
+    margin: auto 0 15px auto;
+  }
+
+  h2 {
+    grid-area: subtitle;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: $color-default-white;
+    text-align: right;
+    margin: 123px -30px 0 0;
+  }
+
+  h1 {
+    grid-area: title;
+    font-weight: 800;
+    font-size: 98px;
+    line-height: 110.4px;
+    letter-spacing: 0.02em;
+    font-family: $ff-alumni-sans;
+    color: $color-default-white;
+    text-align: right;
+    width: 298px;
+    padding: 0 3px 0 0;
+    margin: 0 0 49px 0;
+  }
+
+  .header-main__button {
+    grid-area: button;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14.06px;
+    color: $color-default-white;
+    letter-spacing: 0.05em;
+    text-align: center;
+    padding: 19px;
+    width: 235px;
+    border: 4px solid $color-default-white;
+    margin: 0 0 42px auto;
+  }
+}
