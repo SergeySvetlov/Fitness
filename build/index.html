@@ -23,7 +23,9 @@
         <div class="container">
           <section class="header-top">
             <a class="header-top__logo" href="#">SUPERGYM</a>
-            <a class="header-top__phone" href="tel:+78005555555">8-800-555-55-55</a>
+            <div class="header-top__phones">
+              <a class="header-top__phone" href="tel:+78005555555">8-800-555-55-55</a>
+            </div>
           </section>
           <section class="header-main">
             <div class="header-main__description">
@@ -40,6 +42,41 @@
         </div>
       </header>
       <main>
+        <section class="gym">
+          <div class="container">
+            <div class="gym__description">
+              <h2>Тренажерный зал</h2>
+              <h3>Просторный зал площадью 900&nbsp;кв/м</h3>
+              <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+              <p class="gym__paragraph">В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+            </div>
+            <div class="gym__media">
+              <picture>
+                <source type="image/webp" srcset="img/content/gym.webp, img/content/gym@2x.webp 2x">
+                <img class="gym__img" src="img/content/gym.jpg" width="660" height="401" srcset="img/content/gym@2x.jpg 2x" alt="Зал"/>
+              </picture>
+              <div class="gym__video">
+                <div class="video">
+                  <a class="video__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
+                    <picture>
+                      <source srcset="https://i.ytimg.com/vi_webp/9TZXsZItgdw/maxresdefault.webp" type="image/webp">
+                      <img class="video__media" src="https://i.ytimg.com/vi/9TZXsZItgdw/maxresdefault.jpg" alt="1. Пилот, разборы, ответы и лайвы">
+                    </picture>
+                    <picture>
+                      <source type="image/webp" srcset="img/content/cover.webp, img/content/cover@2x.webp 2x">
+                      <img class="video__media-fitness" src="img/content/cover.jpg" width="364px" height="228px" srcset="img/content/cover@2x.jpg 2x" alt="Зал"/>
+                    </picture>
+                  </a>
+                  <button class="video__button" aria-label="Запустить видео">
+                    <svg class="video__button-shape" width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/sprite/sprite.svg#play"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>                
+            </div>          
+          </div>
+        </section>
         <section class="intro">
           <div class="container">
             <h1>Тестовая страница.</h1>

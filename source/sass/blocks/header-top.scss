@@ -14,7 +14,12 @@
   height: 44px;
 }
 
+.header-top__phones {
+  margin: 0 0 0 auto;
+}
+
 .header-top__phone {
+  display: block;
   font-weight: 600;
   font-size: 26px;
   line-height: 31.2px;
@@ -22,14 +27,13 @@
   font-family: $ff-alumni-sans;
   color: $color-default-white;
   word-wrap: break-word;
-  margin: 0 0 0 auto;
 }
 
 @include vp-1199 {
   .header-top {
-    padding: 40px 0 25px 0;
+    padding: 35px 0 20px 0;
   }
-  
+
   .header-top__logo {
     font-weight: 700;
     font-size: 24px;
@@ -37,7 +41,7 @@
     width: 82px;
     height: 17px;
   }
-  
+
   .header-top__phone {
     font-weight: 700;
     font-size: 24px;
@@ -50,14 +54,14 @@
   .header-top {
     padding: 15px 0 15px 0;
   }
-  
+
   .header-top__logo {
     font-size: 20px;
     line-height: 24px;
     width: 69px;
     height: 24px;
   }
-  
+
   .header-top__phone {
     font-weight: 700;
     font-size: 20px;

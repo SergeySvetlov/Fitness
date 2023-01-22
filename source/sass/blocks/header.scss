@@ -3,9 +3,22 @@
   background-image: url("../img/backgrounds/header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top center;
-  
+  background-position: top left;
+
   @media (min-resolution: 2dppx) {
     background-image: url("../img/backgrounds/header@2x.jpg");
+  }
+}
+
+@include vp-1199 {
+  .header {
+    background-position: top left -25px;
+  }
+}
+
+@include vp-767 {
+  .header {
+    background-size: auto;
+    background-position: top -90px left -105px;
   }
 }
