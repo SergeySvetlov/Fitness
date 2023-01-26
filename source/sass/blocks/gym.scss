@@ -10,6 +10,7 @@
   padding: 40px 90px 0 60px;
   width: 100%;
   max-width: 500px;
+
   h2 {
     font-weight: 600;
     font-size: 48px;
@@ -49,28 +50,29 @@
 @include vp-1199 {
   .gym {
     padding: 100px 0 183px 0;
-  
+
     .container {
       display: block;
     }
   }
-  
+
   .gym__description {
     padding: 0 85px 0 85px;
     max-width: 100%;
     margin: 0 auto;
+
     h2 {
       font-size: 42px;
       line-height: 50.4px;
       margin: 0 0 0 -15px;
       text-align: center;
     }
-  
+
     h3 {
       margin: 0 0 33px 0;
       text-align: center;
     }
-  
+
     p {
       margin: 0 0 43px 0;
       text-align: center;
@@ -80,7 +82,7 @@
   .gym__paragraph {
     display: none;
   }
-  
+
   .gym__media {
     position: relative;
   }
@@ -90,13 +92,13 @@
     object-fit: cover;
     aspect-ratio: 678 / 345;
   }
-  
+
   .gym__video {
     max-width: 266px;
     max-height: 167px;
     left: 50%;
     bottom: 0;
-    transform:translate(-50%, 50%);
+    transform: translate(-50%, 50%);
   }
 }
 
@@ -110,21 +112,22 @@
       max-width: 500px;
     }
   }
-  
+
   .gym__description {
     padding: 0 15px;
+
     h2 {
       font-size: 32px;
       line-height: 38.4px;
       margin: 0 0 5px 0;
       text-align: left;
     }
-  
+
     h3 {
       margin: 0 0 22px 0;
       text-align: left;
     }
-  
+
     p {
       margin: 0 0 34px 0;
       padding: 0 30px 0 0;
@@ -135,7 +138,7 @@
   .gym__paragraph {
     display: none;
   }
-  
+
   .gym__media {
     position: relative;
   }
@@ -146,12 +149,12 @@
     aspect-ratio: 320 / 313;
     margin: 0 0 40px 0;
   }
-  
+
   .gym__video {
     position: static;
     max-width: 100%;
     max-height: 100%;
     transform: none;
     aspect-ratio: 320 / 167;
-  }  
+  }
 }

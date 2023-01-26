@@ -1,0 +1,237 @@
+.promo {
+  padding: 120px 0 106px 0;
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+}
+
+.promo__description {
+  width: 100%;
+  max-width: 500px;
+  padding: 87px 25px 82px 25px;
+  background-color: $color-torch-red-second;
+
+  .promo__description-container {
+    width: 100%;
+    max-width: 345px;
+    height: 100%;
+    display: grid;
+    margin: 0 auto 0 auto;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "title table" "paragraph paragraph" "button button";
+  }
+
+  h3 {
+    grid-area: title;
+    font-weight: 600;
+    font-size: 82px;
+    line-height: 78.72px;
+    letter-spacing: 0.03em;
+    font-family: $ff-alumni-sans;
+    color: $color-default-white;
+    text-align: center;
+    margin: 0 0 0 0;
+    max-width: 201px;
+  }
+
+  p {
+    grid-area: paragraph;
+    display: block;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: $color-default-white;
+    margin: -14px 0 0 0;
+  }
+}
+
+.promo__table {
+  grid-area: table;
+  margin: -6px 0 0 0;
+
+  tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .promo__parameter {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: $color-default-white;
+    border-bottom: 1px solid $color-default-white;
+    width: 100%;
+    padding: 0 0 4px 0;
+  }
+
+  .promo__value {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    font-family: $ff-roboto-condensed;
+    color: $color-default-white;
+  }
+}
+
+.promo__date {
+  margin: 0 0 6px 0;
+
+  .promo__parameter {
+    max-width: 64px;
+  }
+
+  .promo__value {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+
+  .promo__number {
+    display: block;
+    margin: -7px 0 0 0;
+  }
+
+  .promo__month {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 1px 0 0 7px;
+  }
+}
+
+.promo__time {
+  .promo__parameter {
+    max-width: 88px;
+  }
+
+  .promo__value {
+    margin: -8px 0 0 0;
+  }
+}
+
+.promo__button {
+  grid-area: button;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14.06px;
+  font-family: $ff-roboto-condensed;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: $color-default-white;
+  width: 100%;
+  max-width: 345px;
+  border: 4px solid $color-default-white;
+  padding: 27px 27px 24px 27px;
+  margin: auto 0 0 0;
+}
+
+@include vp-1199 {
+  .promo {
+    padding: 100px 0 100px 0;
+
+    .container {
+      grid-template-columns: 43.06% 56.94%;
+    }
+  }
+
+  .promo__description {
+    padding: 51px 25px 51px 23px;
+
+    .promo__description-container {
+      max-width: 202px;
+    }
+
+    h3 {
+      font-size: 48px;
+      line-height: 46.08px;
+      max-width: 117px;
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+
+  .promo__table {
+    .promo__parameter {
+      font-size: 12px;
+      line-height: 18px;
+      padding: 0 0 2px 0;
+    }
+
+    .promo__value {
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+
+  .promo__date {
+    margin: 0;
+
+    .promo__parameter {
+      max-width: 42px;
+    }
+
+    .promo__number {
+      margin: -5px 0 0 0;
+    }
+
+    .promo__month {
+      font-size: 10px;
+      line-height: 12px;
+      padding: 0 0 0 6px;
+    }
+  }
+
+  .promo__time {
+    margin: -1px 0 0 0;
+
+    .promo__parameter {
+      max-width: 56px;
+    }
+
+    .promo__value {
+      padding: 2px 0 0 0;
+    }
+  }
+
+  .promo__button {
+    font-size: 10px;
+    line-height: 11.72px;
+    max-width: 202px;
+    border: 2px solid $color-default-white;
+    padding: 13px 18px 13px 16px;
+  }
+}
+
+@include vp-767 {
+  .promo {
+    padding: 70px 0 70px 0;
+
+    .container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .promo__description {
+    min-height: 292px;
+    margin: 0 auto;
+
+    .promo__description-container {
+      max-width: 202px;
+    }
+  }
+
+  .promo__img-wrapper {
+    margin: 0 auto;
+    max-width: 500px;
+
+    .promo__img {
+      object-fit: cover;
+      min-height: 292px;
+    }
+  }
+}

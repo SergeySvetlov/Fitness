@@ -1,0 +1,30 @@
+.social-list {
+  align-content: center;
+  list-style-type: none;
+  margin: -10px -5.5px 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  min-width: 108px;
+  max-width: 180px;
+}
+
+.social-list__link {
+  display: block;
+  max-height: 36px;
+  max-width: 36px;
+  padding: 5.5px;
+}
+
+@include vp-1199 {
+  .social-list {
+    margin: 0 -12px 0 0;
+  }
+}
+
+@include vp-767 {
+  .social-list {
+    margin: 0 0 0 -5px;
+  }
+}

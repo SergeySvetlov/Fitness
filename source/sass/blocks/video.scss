@@ -70,6 +70,18 @@
   display: block;
 }
 
+@include vp-1199 {
+  .video__button {
+    width: 73px;
+    height: 73px;
+  }
+
+  .video__button-shape {
+    width: 73px;
+    height: 73px;
+  }
+}
+
 @include vp-767 {
   .video {
     padding-bottom: 52.19%;

@@ -1,0 +1,137 @@
+.contacts {
+  padding: 58px 0 47px 120px;
+
+  h2 {
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 64.8px;
+    letter-spacing: 0.03em;
+    font-family: $ff-alumni-sans;
+    color: $color-sapphire;
+    margin: 0 0 36px 0;
+    word-wrap: break-word;
+  }
+}
+
+.contacts__list {
+  position: relative;
+  list-style-type: none;
+  padding: 0 0 0 3px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 1px;
+    height: 77%;
+    background-color: $color-light-slate-gray;
+    top: 7px;
+    left: 51%;
+  }
+
+  .contacts__item {
+    padding: 0 59px 18px 0;
+  }
+
+  .contacts__item:nth-child(2n) {
+    padding: 0 0 18px 61px;
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0 0 3px 0;
+    word-wrap: break-word;
+  }
+
+  p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21.33px;
+    word-wrap: break-word;
+  }
+}
+
+@include vp-1199 {
+  .contacts {
+    padding: 61px 35px 43px 135px;
+
+    h2 {
+      font-size: 42px;
+      line-height: 50.4px;
+      margin: 0 0 35px 0;
+    }
+  }
+
+  .contacts__list {
+    padding: 0;
+
+    &::after {
+      height: 80%;
+      top: 6px;
+      left: 44.5%;
+    }
+
+    .contacts__item {
+      padding: 0 45px 20px 0;
+    }
+
+    .contacts__item:nth-child(2n) {
+      padding: 0 0 20px 15px;
+    }
+
+    h3 {
+      font-size: 20px;
+      line-height: 30px;
+      margin: 0 0 4px 0;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 27.42px;
+    }
+  }
+}
+
+@include vp-767 {
+  .contacts {
+    padding: 63px 15px 43px 15px;
+
+    h2 {
+      font-size: 32px;
+      line-height: 38.4px;
+    }
+  }
+
+  .contacts__list {
+    grid-template-columns: 1fr;
+
+    &::after {
+      display: none;
+    }
+
+    .contacts__item {
+      padding: 0 0 20px 0;
+    }
+
+    .contacts__item:nth-child(2n) {
+      padding: 0 0 20px 0;
+    }
+
+    .contacts__item:nth-child(2) {
+      order: 3;
+    }
+
+    .contacts__item:nth-child(4) {
+      order: 3;
+    }
+
+    h3 {
+      margin: 0 0 5px 0;
+    }
+  }
+}

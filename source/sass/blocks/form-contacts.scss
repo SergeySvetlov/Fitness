@@ -1,0 +1,19 @@
+.form-contacts {
+  background: linear-gradient(90deg, $color-sapphire 50%, $color-default-white 50%);
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@include vp-1199 {
+  .form-contacts {
+    background: transparent;
+
+    .container {
+      grid-template-columns: 1fr;
+      padding: 0;
+    }
+  }
+}
