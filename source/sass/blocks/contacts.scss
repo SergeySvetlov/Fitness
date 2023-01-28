@@ -104,11 +104,15 @@
     h2 {
       font-size: 32px;
       line-height: 38.4px;
+      max-width: 400px;
+      margin: 0 auto;
     }
   }
 
   .contacts__list {
     grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
 
     &::after {
       display: none;

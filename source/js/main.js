@@ -4,6 +4,7 @@ import {findVideos} from './modules/video/video';
 import {checkForm} from './modules/form/form';
 import {enableTabs} from './modules/tabs/tabs';
 import {animateAnchors} from './modules/anchor/anchor';
+import {enableSlides} from './modules/slide/slide';
 
 // ---------------------------------
 
@@ -25,6 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
     checkForm();
     enableTabs();
     animateAnchors();
+    enableSlides();
   });
 });
 
