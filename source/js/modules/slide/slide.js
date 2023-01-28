@@ -6,7 +6,9 @@ const openSlide = (i) => {
 
 const enableSlides = () => {
   slides.forEach(function (slide) {
-    slide.addEventListener('click', openSlide(slide));
+    slide.addEventListener('click', () => {
+      openSlide(slide);
+    });
   });
 };
 

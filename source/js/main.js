@@ -5,6 +5,7 @@ import {checkForm} from './modules/form/form';
 import {enableTabs} from './modules/tabs/tabs';
 import {animateAnchors} from './modules/anchor/anchor';
 import {enableSlides} from './modules/slide/slide';
+import {swiperCoaches} from './modules/swiper/coaches';
 
 // ---------------------------------
 
@@ -27,6 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
     enableTabs();
     animateAnchors();
     enableSlides();
+    swiperCoaches();
   });
 });
 

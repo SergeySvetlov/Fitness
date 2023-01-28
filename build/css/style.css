@@ -848,9 +848,10 @@ button,
 }
 
 .header-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto;
+  grid-template-columns: 1fr auto;
   margin: -54px 0 0 0;
   padding: 0 200px 51px 19px;
 }
@@ -858,6 +859,7 @@ button,
 .header-main__img {
   -o-object-fit: cover;
   object-fit: cover;
+  aspect-ratio: 500/556;
 }
 
 .header-main__description {
@@ -868,7 +870,7 @@ button,
   -ms-grid-rows: 1fr auto auto;
   grid-template-rows: 1fr auto auto;
   grid-template-areas: "city city" "subtitle title" "button button";
-  padding: 0 60px 0 0;
+  padding: 0;
 }
 
 .header-main__description p {
@@ -882,10 +884,10 @@ button,
   font-family: "AlumniSans", "Arial", sans-serif;
   color: #ffffff;
   max-width: 290px;
-  padding: 0 55px 0 0;
+  padding: 0;
   letter-spacing: 0.03em;
   word-wrap: break-word;
-  margin: auto 0 15px auto;
+  margin: auto 113px 15px auto;
 }
 
 .header-main__description h2 {
@@ -898,7 +900,7 @@ button,
   color: #ffffff;
   text-align: right;
   width: 114px;
-  margin: 120px -30px 0 0;
+  margin: 123px 0 0 0;
 }
 
 .header-main__description h1 {
@@ -907,15 +909,17 @@ button,
   grid-area: title;
   font-weight: 600;
   font-size: 92px;
+  -webkit-text-stroke: 3px;
+  text-transform: uppercase;
   line-height: 110.4px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.05em;
   font-family: "AlumniSans", "Arial", sans-serif;
   color: #ffffff;
   text-align: right;
   word-wrap: break-word;
   width: 298px;
-  padding: 0 7px 0 0;
-  margin: 0 0 48px 0;
+  padding: 0 0 0 0;
+  margin: 0 0 51px -63px;
 }
 
 .header-main__description .header-main__button {
@@ -931,9 +935,9 @@ button,
   text-align: center;
   word-wrap: break-word;
   padding: 18px;
-  width: 235px;
+  width: 234px;
   border: 4px solid #ffffff;
-  margin: 0 4px 42px auto;
+  margin: auto 62px 43px auto;
 }
 
 .gym {
@@ -2199,21 +2203,21 @@ button,
 
   .header-main {
     margin: 0;
+    -webkit-column-gap: 5px;
+    -moz-column-gap: 5px;
+    column-gap: 5px;
     padding: 0 0 82px 0;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
   }
 
   .header-main__img {
     min-width: 324px;
     min-height: 390px;
+    aspect-ratio: 324/390;
   }
 
   .header-main__description {
     -ms-grid-columns: 1fr 235px;
     grid-template-columns: 1fr 235px;
-    padding: 0 35px 0 0;
   }
 
   .header-main__description p {
@@ -2221,26 +2225,27 @@ button,
     line-height: 40.8px;
     max-width: 220px;
     padding: 0;
-    margin: auto -2px 10px auto;
+    margin: auto 27px 6px auto;
   }
 
   .header-main__description h2 {
-    margin: 85px -30px 0 0;
+    margin: 88px 0 0 auto;
   }
 
   .header-main__description h1 {
     font-size: 72px;
     line-height: 86.4px;
+    text-transform: none;
     letter-spacing: 0.05em;
     width: 235px;
     padding: 0;
-    margin: 0 0 34px 0;
+    margin: 0 0 37px -24px;
   }
 
   .header-main__description .header-main__button {
     padding: 19px;
     width: 190px;
-    margin: 0 -8px 23px auto;
+    margin: auto 22px 23px auto;
   }
 
   .gym {
@@ -2752,6 +2757,11 @@ button,
     margin: 0;
     padding: 0 0 80px 0;
     min-height: 439px;
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+    -webkit-column-gap: 0;
+    -moz-column-gap: 0;
+    column-gap: 0;
   }
 
   .header-main__img {
@@ -2761,32 +2771,33 @@ button,
   .header-main__description {
     width: 100%;
     max-width: 450px;
+    min-height: 357px;
     -ms-grid-columns: 1fr 213px;
     grid-template-columns: 1fr 213px;
     padding: 0;
+    margin: 0 auto;
   }
 
   .header-main__description p {
     font-size: 28px;
     line-height: 33.6px;
-    margin: auto 2px 17px auto;
+    margin: auto 2px 14px auto;
   }
 
   .header-main__description h2 {
-    margin: 75px -37px 0 auto;
+    margin: 78px -36px 0 auto;
     width: auto;
     max-width: 114px;
   }
 
   .header-main__description h1 {
     width: 213px;
-    margin: 0 0 21px 0;
+    margin: 0 0 23px 0;
   }
 
   .header-main__description .header-main__button {
     padding: 20px;
     width: 100%;
-    max-width: 370px;
     margin: 0 auto 0 auto;
   }
 
