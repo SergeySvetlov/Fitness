@@ -6,6 +6,7 @@ import {enableTabs} from './modules/tabs/tabs';
 import {animateAnchors} from './modules/anchor/anchor';
 import {enableSlides} from './modules/slide/slide';
 import {swiperCoaches} from './modules/swiper/coaches';
+import {swiperReviews} from './modules/swiper/reviews';
 
 // ---------------------------------
 
@@ -28,7 +29,8 @@ window.addEventListener('DOMContentLoaded', () => {
     enableTabs();
     animateAnchors();
     enableSlides();
-    swiperCoaches();
+    swiperCoaches;
+    swiperReviews;
   });
 });
 

@@ -1,6 +1,10 @@
 .coaches {
   padding: 0 0 89px 0;
 
+  .container {
+    position: relative;
+  }
+
   h2 {
     font-weight: 600;
     font-size: 54px;
@@ -14,7 +18,8 @@
 
 .coaches__slide {
   position: relative;
-  width: max-content;
+  display: inline-block;
+  vertical-align: top;
 
   h3 {
     font-weight: 700;
@@ -41,6 +46,15 @@
   }
 }
 
+.coaches__img {
+  aspect-ratio: 260 / 294;
+  object-fit: cover;
+}
+
+.coaches__description {
+  aspect-ratio: 260 / 294;
+}
+
 .coaches__description {
   position: absolute;
   top: 0;
@@ -50,6 +64,7 @@
   background-color: $color-sapphire-opacity;
   padding: 75px 30px 30px 30px;
   height: 100%;
+  overflow-y: auto;
 
   span {
     display: block;
@@ -69,6 +84,21 @@
   }
 }
 
+.coaches__button {
+  background-color: transparent;
+  border: none;
+  color: $color-dark-gray;
+  top: auto;
+  bottom: 32%;
+  left: 45px;
+
+
+  &--next {
+    left: auto;
+    right: 45px;;
+  }
+}
+
 @include vp-1199 {
   .coaches {
     padding: 0 0 100px 0;
@@ -79,6 +109,11 @@
       margin: 0 0 30px 0;
       text-align: center;
     }
+  }
+
+  .coaches__slider {
+    max-width: 566px;
+    margin: 0 auto;
   }
 
   .coaches__slide {
@@ -102,6 +137,24 @@
       }
     }    
   }
+
+  .coaches__img {
+    aspect-ratio: 268 / 294;
+  }
+
+  .coaches__description {
+    aspect-ratio: 268 / 294;
+  }
+
+  .coaches__button {
+    bottom: 30%;
+    left: 43px;
+
+    &--next {
+      left: auto;
+      right: 40px;;
+    }
+  }
 }
 
 @include vp-767 {
@@ -112,6 +165,38 @@
       font-size: 32px;
       line-height: 38.4px;
       margin: 0 0 41px 0;
+    }
+  }
+
+  .coaches__slider {
+    max-width: 226px;
+    margin: 0 auto;
+  }
+
+  .coaches__slide {
+    &.is-active {
+      h3 {
+        bottom: 74%;
+      }
+    }    
+  }
+
+  .coaches__img {
+    aspect-ratio: 226 / 274;
+  }
+  
+  .coaches__description {
+    aspect-ratio: 226 / 274;
+    padding: 65px 10px 10px 10px;
+  }
+
+  .coaches__button {
+    bottom: 32%;
+    left: 13px;
+
+    &--next {
+      left: auto;
+      right: 13px;;
     }
   }
 }
