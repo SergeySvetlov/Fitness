@@ -1,10 +1,6 @@
 .coaches {
   padding: 0 0 89px 0;
 
-  .container {
-    position: relative;
-  }
-
   h2 {
     font-weight: 600;
     font-size: 54px;
@@ -16,9 +12,13 @@
   }
 }
 
+.coaches__slider {
+  position: relative;
+}
+
 .coaches__slide {
   position: relative;
-  display: inline-block;
+  max-width: 260px;
   vertical-align: top;
 
   h3 {
@@ -53,9 +53,6 @@
 
 .coaches__description {
   aspect-ratio: 260 / 294;
-}
-
-.coaches__description {
   position: absolute;
   top: 0;
   left: 0;
@@ -89,13 +86,14 @@
   border: none;
   color: $color-dark-gray;
   top: auto;
-  bottom: 32%;
-  left: 45px;
-
+  bottom: 44%;
+  left: -55px;
+  width: 16px;
+  height: 32px;
 
   &--next {
     left: auto;
-    right: 45px;;
+    right: -55px;
   }
 }
 
@@ -117,11 +115,17 @@
   }
 
   .coaches__slide {
+    max-width: 268px;
+
+    h3 {
+      left: 6px;
+    }
+
     &:hover {
       h3 {
         bottom: 7%;
       }
-  
+
       .coaches__description {
         opacity: 0;
       }
@@ -129,13 +133,14 @@
 
     &.is-active {
       h3 {
+        left: -2px;
         bottom: 73%;
       }
-  
+
       .coaches__description {
         opacity: 1;
       }
-    }    
+    }
   }
 
   .coaches__img {
@@ -147,12 +152,11 @@
   }
 
   .coaches__button {
-    bottom: 30%;
-    left: 43px;
+    left: -49px;
 
     &--next {
       left: auto;
-      right: 40px;;
+      right: -55px;
     }
   }
 }
@@ -174,29 +178,31 @@
   }
 
   .coaches__slide {
+    max-width: 226px;
+
     &.is-active {
       h3 {
-        bottom: 74%;
+        left: 1px;
+        bottom: 74.8%;
       }
-    }    
+    }
   }
 
   .coaches__img {
     aspect-ratio: 226 / 274;
   }
-  
+
   .coaches__description {
     aspect-ratio: 226 / 274;
     padding: 65px 10px 10px 10px;
   }
 
   .coaches__button {
-    bottom: 32%;
-    left: 13px;
+    left: -29px;
 
     &--next {
       left: auto;
-      right: 13px;;
+      right: -31px;
     }
   }
 }

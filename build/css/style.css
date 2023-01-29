@@ -639,7 +639,7 @@ template {
 }
 
 :root {
-  --swiper-navigation-size: 32px;
+  --swiper-navigation-size: 44px;
   /*
   --swiper-navigation-color: var(--swiper-theme-color);
   */
@@ -649,7 +649,7 @@ template {
 .swiper-button-next {
   position: absolute;
   top: 50%;
-  width: calc(var(--swiper-navigation-size) / 32 * 16);
+  width: calc(var(--swiper-navigation-size) / 44 * 27);
   height: var(--swiper-navigation-size);
   margin-top: calc(0px - var(--swiper-navigation-size) / 2);
   z-index: 10;
@@ -2264,10 +2264,6 @@ button,
   padding: 0 0 89px 0;
 }
 
-.coaches .container {
-  position: relative;
-}
-
 .coaches h2 {
   font-weight: 600;
   font-size: 54px;
@@ -2278,9 +2274,13 @@ button,
   margin: 0 0 48px 0;
 }
 
+.coaches__slider {
+  position: relative;
+}
+
 .coaches__slide {
   position: relative;
-  display: inline-block;
+  max-width: 260px;
   vertical-align: top;
 }
 
@@ -2314,9 +2314,6 @@ button,
 
 .coaches__description {
   aspect-ratio: 260/294;
-}
-
-.coaches__description {
   position: absolute;
   top: 0;
   left: 0;
@@ -2350,13 +2347,15 @@ button,
   border: none;
   color: #afafaf;
   top: auto;
-  bottom: 32%;
-  left: 45px;
+  bottom: 44%;
+  left: -55px;
+  width: 16px;
+  height: 32px;
 }
 
 .coaches__button--next {
   left: auto;
-  right: 45px;
+  right: -55px;
 }
 
 .advantages {
@@ -3342,6 +3341,14 @@ button,
     margin: 0 auto;
   }
 
+  .coaches__slide {
+    max-width: 268px;
+  }
+
+  .coaches__slide h3 {
+    left: 6px;
+  }
+
   .coaches__slide:hover h3 {
     bottom: 7%;
   }
@@ -3351,6 +3358,7 @@ button,
   }
 
   .coaches__slide.is-active h3 {
+    left: -2px;
     bottom: 73%;
   }
 
@@ -3367,13 +3375,12 @@ button,
   }
 
   .coaches__button {
-    bottom: 30%;
-    left: 43px;
+    left: -49px;
   }
 
   .coaches__button--next {
     left: auto;
-    right: 40px;
+    right: -55px;
   }
 
   .advantages {
@@ -3524,6 +3531,7 @@ button,
 
   .reviews__item {
     max-width: 566px;
+    padding: 54px 65px 57px 65px;
   }
 
   .footer {
@@ -3873,8 +3881,13 @@ button,
     margin: 0 auto;
   }
 
+  .coaches__slide {
+    max-width: 226px;
+  }
+
   .coaches__slide.is-active h3 {
-    bottom: 74%;
+    left: 1px;
+    bottom: 74.8%;
   }
 
   .coaches__img {
@@ -3887,13 +3900,12 @@ button,
   }
 
   .coaches__button {
-    bottom: 32%;
-    left: 13px;
+    left: -29px;
   }
 
   .coaches__button--next {
     left: auto;
-    right: 13px;
+    right: -31px;
   }
 
   .advantages {

@@ -1,4 +1,5 @@
-const swiperReviews = new Swiper('.reviews__list-wrapper', {
+const initeSwiperReviews = () => {
+  const swiperReviews = new Swiper('.reviews__list-wrapper', {
     slidesPerView: 1,
     autoHeight: true,
     loop: true,
@@ -7,5 +8,6 @@ const swiperReviews = new Swiper('.reviews__list-wrapper', {
       prevEl: '.swiper-button-prev',
     },
   });
-  
-  export {swiperReviews};
+};
+
+export {initeSwiperReviews};

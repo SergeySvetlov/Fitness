@@ -5,8 +5,8 @@ import {checkForm} from './modules/form/form';
 import {enableTabs} from './modules/tabs/tabs';
 import {animateAnchors} from './modules/anchor/anchor';
 import {enableSlides} from './modules/slide/slide';
-import {swiperCoaches} from './modules/swiper/coaches';
-import {swiperReviews} from './modules/swiper/reviews';
+import {initeSwiperCoaches} from './modules/swiper/coaches';
+import {initeSwiperReviews} from './modules/swiper/reviews';
 
 // ---------------------------------
 
@@ -29,8 +29,8 @@ window.addEventListener('DOMContentLoaded', () => {
     enableTabs();
     animateAnchors();
     enableSlides();
-    swiperCoaches;
-    swiperReviews;
+    initeSwiperCoaches();
+    initeSwiperReviews();
   });
 });
 
