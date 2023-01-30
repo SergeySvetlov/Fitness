@@ -1689,14 +1689,9 @@ button,
 }
 
 .header-top__logo {
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 43.2px;
-  letter-spacing: 0.02em;
-  font-family: "AlumniSans", "Arial", sans-serif;
-  color: #ffffff;
   width: 122px;
-  height: 44px;
+  height: 46px;
+  padding: 10.5px 0 10.5px 0;
 }
 
 .header-top__phones {
@@ -2747,7 +2742,7 @@ button,
 
 .footer {
   background-color: #030a1a;
-  padding: 28px 0 20px 0;
+  padding: 25px 0 16px 0;
 }
 
 .footer .container {
@@ -2775,17 +2770,13 @@ button,
 }
 
 .footer__logo {
-  display: block;
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 31.2px;
-  letter-spacing: 0.02em;
-  font-family: "AlumniSans", "Arial", sans-serif;
-  color: #ffffff;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
-  padding: 15px 15px 15px 0;
+  width: 102px;
+  margin: 0 0 0 0;
+  padding: 17px 0 0 1px;
+}
+
+.footer__logo svg {
+  max-width: 88px;
 }
 
 .footer__link {
@@ -2837,12 +2828,12 @@ button,
   grid-template-columns: 1fr 1fr;
 }
 
-.form__wrapper {
+.form-contacts__form-wrapper {
   background-color: #102654;
   padding: 56px 0 47px 0;
 }
 
-.form__wrapper h2 {
+.form-contacts__form-wrapper h2 {
   font-weight: 800;
   font-size: 54px;
   line-height: 84.24px;
@@ -3076,11 +3067,13 @@ button,
   }
 
   .header-top__logo {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28.8px;
+    padding: 0;
     width: 82px;
     height: 17px;
+  }
+
+  .header-top__logo svg {
+    width: 82px;
   }
 
   .header-top__phone {
@@ -3535,7 +3528,7 @@ button,
   }
 
   .footer {
-    padding: 26px 0 29px 0;
+    padding: 23px 0 23px 0;
   }
 
   .footer__links-list {
@@ -3543,12 +3536,14 @@ button,
   }
 
   .footer__logo {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28.8px;
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    padding: 16px 16px 0 1px;
+  }
+
+  .footer__logo svg {
+    max-width: 83px;
   }
 
   .footer__link {
@@ -3569,11 +3564,11 @@ button,
     padding: 0;
   }
 
-  .form__wrapper {
+  .form-contacts__form-wrapper {
     padding: 61px 163px 69px 133px;
   }
 
-  .form__wrapper h2 {
+  .form-contacts__form-wrapper h2 {
     font-weight: 700;
     font-size: 42px;
     line-height: 50.4px;
@@ -3655,8 +3650,12 @@ button,
   }
 
   .header-top__logo {
-    font-size: 20px;
-    line-height: 24px;
+    padding: 4px 0 0 2px;
+    width: 69px;
+    height: 24px;
+  }
+
+  .header-top__logo svg {
     width: 69px;
     height: 24px;
   }
@@ -4110,7 +4109,7 @@ button,
   }
 
   .footer {
-    padding: 37px 0 29px 0;
+    padding: 41px 0 29px 0;
   }
 
   .footer .container {
@@ -4118,13 +4117,13 @@ button,
   }
 
   .footer__logo {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
-    padding: 8px 8px 8px 0;
+    padding: 0;
+    margin: 0;
+    max-height: 15px;
+  }
+
+  .footer__logo svg {
+    max-width: 68px;
   }
 
   .footer__links-list {
@@ -4136,7 +4135,7 @@ button,
     -moz-column-gap: 30px;
     column-gap: 30px;
     max-width: 100%;
-    margin: -40px 0 17px -10px;
+    margin: -54px 0 17px -10px;
     padding: 0;
     -ms-flex-line-pack: start;
     align-content: flex-start;
@@ -4184,11 +4183,11 @@ button,
     margin: 0 0 0 -5px;
   }
 
-  .form__wrapper {
+  .form-contacts__form-wrapper {
     padding: 64px 15px 69px 15px;
   }
 
-  .form__wrapper h2 {
+  .form-contacts__form-wrapper h2 {
     font-weight: 600;
     font-size: 32px;
     line-height: 38.4px;
@@ -4287,6 +4286,6 @@ button,
   }
 
   .subscription::before {
-    background-image: url("../img/backgrounds/weight@2x.jpg");
+    background-image: url("../img/backgrounds/weight@2x.png");
   }
 }

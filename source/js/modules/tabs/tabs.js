@@ -39,12 +39,14 @@ const openTab12 = () => {
 };
 
 const enableTabs = () => {
-  tab1.classList.add('is-active');
-  cardsList6.classList.add('is-closed');
-  cardsList12.classList.add('is-closed');
-  tab1.addEventListener('click', openTab1);
-  tab6.addEventListener('click', openTab6);
-  tab12.addEventListener('click', openTab12);
+  if (document.getElementById('subscription') !== null) {
+    tab1.classList.add('is-active');
+    cardsList6.classList.add('is-closed');
+    cardsList12.classList.add('is-closed');
+    tab1.addEventListener('click', openTab1);
+    tab6.addEventListener('click', openTab6);
+    tab12.addEventListener('click', openTab12);
+  }
 };
 
 export {enableTabs};

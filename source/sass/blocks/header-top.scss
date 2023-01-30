@@ -4,14 +4,9 @@
 }
 
 .header-top__logo {
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 43.2px;
-  letter-spacing: 0.02em;
-  font-family: $ff-alumni-sans;
-  color: $color-default-white;
   width: 122px;
-  height: 44px;
+  height: 46px;
+  padding: 10.5px 0 10.5px 0;
 }
 
 .header-top__phones {
@@ -35,11 +30,13 @@
   }
 
   .header-top__logo {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28.8px;
+    padding: 0;
     width: 82px;
     height: 17px;
+
+    svg {
+      width: 82px;
+    }
   }
 
   .header-top__phone {
@@ -56,10 +53,14 @@
   }
 
   .header-top__logo {
-    font-size: 20px;
-    line-height: 24px;
+    padding: 4px 0 0 2px;
     width: 69px;
     height: 24px;
+
+    svg {
+      width: 69px;
+      height: 24px;
+    }
   }
 
   .header-top__phone {
