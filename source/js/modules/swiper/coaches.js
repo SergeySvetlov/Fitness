@@ -17,6 +17,9 @@ const initeSwiperCoaches = () => {
       },
     },
   });
+  document.querySelector('.coaches .swiper-slide-duplicate').onfocus = function () {
+    document.querySelector('.coaches .swiper-slide-active').focus();
+  };
 };
 
 export {initeSwiperCoaches};

@@ -206,6 +206,10 @@
     max-width: 100%;
     width: 78%;
 
+    h3 {
+      top: auto;
+    }
+
     &.is-active {
       h3 {
         left: 1px;
