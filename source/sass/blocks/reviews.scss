@@ -26,12 +26,16 @@
   color: $color-dark-gray;
   top: auto;
   bottom: 0;
-  left: -57px;
+  left: -60px;
   height: 100%;
 
   &--next {
     left: auto;
-    right: -57px;
+    right: -61px;
+  }
+
+  &::after {
+    font-size: 33px;
   }
 }
 
@@ -151,12 +155,16 @@
   .reviews__button {
     top: auto;
     bottom: 0;
-    left: -37px;
+    left: -40px;
     height: 100%;
 
     &--next {
       left: auto;
-      right: -37px;
+      right: -40px;
+    }
+
+    &::after {
+      font-size: 19px;
     }
   }
 }

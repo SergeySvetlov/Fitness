@@ -31,7 +31,7 @@
     margin: auto 113px 15px auto;
   }
 
-  h2 {
+  ul {
     grid-area: subtitle;
     font-weight: 400;
     font-size: 14px;
@@ -40,6 +40,8 @@
     text-align: right;
     width: 114px;
     margin: 123px 0 0 0;
+    list-style-type: none;
+    padding: 0;
   }
 
   h1 {
@@ -99,7 +101,7 @@
       margin: auto 27px 6px auto;
     }
 
-    h2 {
+    ul {
       margin: 88px 0 0 auto;
     }
 
@@ -148,7 +150,7 @@
       margin: auto 2px 14px auto;
     }
 
-    h2 {
+    ul {
       margin: 78px -36px 0 auto;
       width: auto;
       max-width: 114px;
