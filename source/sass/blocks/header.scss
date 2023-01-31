@@ -20,10 +20,5 @@
   .header {
     background-size: auto;
     background-position: top -90px left -105px;
-
-    @media (min-resolution: 2dppx) {
-      background-size: auto;
-      background-position: top -90px left -105px;
-    } 
   }
 }

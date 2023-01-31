@@ -121,11 +121,15 @@
 
   .reviews__slider {
     max-width: 226px;
+    max-width: 100%;
+    width: 78%;
   }
 
   .reviews__item {
     padding: 41px 23px 34px 23px;
     max-width: 226px;
+    max-width: 100%;
+    width: 78%;
     grid-template-columns: 1fr;
 
     .reviews__img {
