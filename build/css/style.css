@@ -3680,6 +3680,7 @@ button,
 
   .header {
     background-size: cover;
+    background-position: top left -55px;
   }
 
   .header-top {
